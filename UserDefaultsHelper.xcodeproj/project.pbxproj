@@ -6,14 +6,19 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		54A868E52E2524A800ABEB16 /* Package.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54A868E42E2524A800ABEB16 /* Package.swift */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXFileReference section */
 		548ABF3A2E24080000F1F2C6 /* UserDefaultsHelper.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = UserDefaultsHelper.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		54A868E42E2524A800ABEB16 /* Package.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Package.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
-		548ABF3C2E24080000F1F2C6 /* UserDefaultsHelper */ = {
+		54A868DC2E25249800ABEB16 /* Sources */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
-			path = UserDefaultsHelper;
+			path = Sources;
 			sourceTree = "<group>";
 		};
 /* End PBXFileSystemSynchronizedRootGroup section */
@@ -32,8 +37,9 @@
 		548ABF302E24080000F1F2C6 = {
 			isa = PBXGroup;
 			children = (
-				548ABF3C2E24080000F1F2C6 /* UserDefaultsHelper */,
 				548ABF3B2E24080000F1F2C6 /* Products */,
+				54A868DC2E25249800ABEB16 /* Sources */,
+				54A868E42E2524A800ABEB16 /* Package.swift */,
 			);
 			sourceTree = "<group>";
 		};
@@ -72,7 +78,7 @@
 			dependencies = (
 			);
 			fileSystemSynchronizedGroups = (
-				548ABF3C2E24080000F1F2C6 /* UserDefaultsHelper */,
+				54A868DC2E25249800ABEB16 /* Sources */,
 			);
 			name = UserDefaultsHelper;
 			packageProductDependencies = (
@@ -93,6 +99,7 @@
 				TargetAttributes = {
 					548ABF392E24080000F1F2C6 = {
 						CreatedOnToolsVersion = 16.4;
+						LastSwiftMigration = 1640;
 					};
 				};
 			};
@@ -130,6 +137,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				54A868E52E2524A800ABEB16 /* Package.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -267,8 +275,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUILD_LIBRARY_FOR_DISTRIBUTION = YES;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = Y633T42J9Y;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
@@ -291,6 +301,7 @@
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_INSTALL_MODULE = YES;
 				SWIFT_INSTALL_OBJC_HEADER = NO;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -300,8 +311,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUILD_LIBRARY_FOR_DISTRIBUTION = YES;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = Y633T42J9Y;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
