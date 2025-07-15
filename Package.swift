@@ -1,12 +1,4 @@
-//
-//  Untitled.swift
-//  UserDefaultsHelper
-//
-//  Created by Begüm Arıcı on 13.07.2025.
-//
-
-// swift-tools-version:5.9
-
+// swift-tools-version:5.8
 import PackageDescription
 
 let package = Package(
@@ -20,7 +12,7 @@ let package = Package(
             targets: ["UserDefaultsHelper"]),
     ],
     dependencies: [
-        // şimdilik boş
+        
     ],
     targets: [
         .target(
